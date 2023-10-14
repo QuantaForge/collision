@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace NunoMaduro\Collision\Adapters\QuantaQuirk;
+namespace NunoMaduro\Collision\Adapters\QuantaForge;
 
-use QuantaQuirk\Contracts\Container\Container;
-use QuantaQuirk\Contracts\Debug\ExceptionHandler as ExceptionHandlerContract;
+use QuantaForge\Contracts\Container\Container;
+use QuantaForge\Contracts\Debug\ExceptionHandler as ExceptionHandlerContract;
 use NunoMaduro\Collision\Provider;
 use Symfony\Component\Console\Exception\ExceptionInterface as SymfonyConsoleExceptionInterface;
 use Throwable;
@@ -18,14 +18,14 @@ final class ExceptionHandler implements ExceptionHandlerContract
     /**
      * Holds an instance of the application exception handler.
      *
-     * @var \QuantaQuirk\Contracts\Debug\ExceptionHandler
+     * @var \QuantaForge\Contracts\Debug\ExceptionHandler
      */
     protected $appExceptionHandler;
 
     /**
      * Holds an instance of the container.
      *
-     * @var \QuantaQuirk\Contracts\Container\Container
+     * @var \QuantaForge\Contracts\Container\Container
      */
     protected $container;
 
@@ -88,7 +88,7 @@ final class ExceptionHandler implements ExceptionHandlerContract
     /**
      * Register a reportable callback.
      *
-     * @return \QuantaQuirk\Foundation\Exceptions\ReportableHandler
+     * @return \QuantaForge\Foundation\Exceptions\ReportableHandler
      */
     public function reportable(callable $reportUsing)
     {

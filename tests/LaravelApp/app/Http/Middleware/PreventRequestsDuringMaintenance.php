@@ -2,7 +2,7 @@
 
 namespace App\Http\Middleware;
 
-use QuantaQuirk\Foundation\Http\Middleware\PreventRequestsDuringMaintenance as Middleware;
+use QuantaForge\Foundation\Http\Middleware\PreventRequestsDuringMaintenance as Middleware;
 
 class PreventRequestsDuringMaintenance extends Middleware
 {

@@ -1,6 +1,6 @@
 <?php
 
-use QuantaQuirk\Sanctum\Sanctum;
+use QuantaForge\Sanctum\Sanctum;
 
 return [
 

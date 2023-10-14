@@ -1,7 +1,7 @@
 <?php
 
-use QuantaQuirk\Foundation\Inspiring;
-use QuantaQuirk\Support\Facades\Artisan;
+use QuantaForge\Foundation\Inspiring;
+use QuantaForge\Support\Facades\Artisan;
 
 /*
 |--------------------------------------------------------------------------

@@ -2,7 +2,7 @@
 
 namespace App\Http\Middleware;
 
-use QuantaQuirk\Foundation\Http\Middleware\VerifyCsrfToken as Middleware;
+use QuantaForge\Foundation\Http\Middleware\VerifyCsrfToken as Middleware;
 
 class VerifyCsrfToken extends Middleware
 {

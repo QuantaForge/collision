@@ -1,6 +1,6 @@
 <?php
 
-use QuantaQuirk\Support\Facades\Route;
+use QuantaForge\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------

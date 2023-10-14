@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>QuantaQuirk</title>
+        <title>QuantaForge</title>
 
         <!-- Fonts -->
         <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -50,12 +50,12 @@
                         <div class="p-6">
                             <div class="flex items-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-gray-500"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" /></svg>
-                                <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://quantaquirk.com/docs" class="underline text-gray-900 dark:text-white">Documentation</a></div>
+                                <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://quantaforge.com/docs" class="underline text-gray-900 dark:text-white">Documentation</a></div>
                             </div>
 
                             <div class="ml-12">
                                 <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    QuantaQuirk has wonderful, thorough documentation covering every aspect of the framework. Whether you are new to the framework or have previous experience with QuantaQuirk, we recommend reading all of the documentation from beginning to end.
+                                    QuantaForge has wonderful, thorough documentation covering every aspect of the framework. Whether you are new to the framework or have previous experience with QuantaForge, we recommend reading all of the documentation from beginning to end.
                                 </div>
                             </div>
                         </div>
@@ -68,7 +68,7 @@
 
                             <div class="ml-12">
                                 <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laracasts offers thousands of video tutorials on QuantaQuirk, PHP, and JavaScript development. Check them out, see for yourself, and massively level up your development skills in the process.
+                                    Laracasts offers thousands of video tutorials on QuantaForge, PHP, and JavaScript development. Check them out, see for yourself, and massively level up your development skills in the process.
                                 </div>
                             </div>
                         </div>
@@ -76,12 +76,12 @@
                         <div class="p-6 border-t border-gray-200 dark:border-gray-700">
                             <div class="flex items-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-gray-500"><path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" /></svg>
-                                <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://quantaquirk-news.com/" class="underline text-gray-900 dark:text-white">QuantaQuirk News</a></div>
+                                <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://quantaforge-news.com/" class="underline text-gray-900 dark:text-white">QuantaForge News</a></div>
                             </div>
 
                             <div class="ml-12">
                                 <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    QuantaQuirk News is a community driven portal and newsletter aggregating all of the latest and most important news in the QuantaQuirk ecosystem, including new package releases and tutorials.
+                                    QuantaForge News is a community driven portal and newsletter aggregating all of the latest and most important news in the QuantaForge ecosystem, including new package releases and tutorials.
                                 </div>
                             </div>
                         </div>
@@ -94,7 +94,7 @@
 
                             <div class="ml-12">
                                 <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    QuantaQuirk's robust library of first-party tools and libraries, such as <a href="https://forge.quantaquirk.com" class="underline">Forge</a>, <a href="https://vapor.quantaquirk.com" class="underline">Vapor</a>, <a href="https://nova.quantaquirk.com" class="underline">Nova</a>, and <a href="https://envoyer.io" class="underline">Envoyer</a> help you take your projects to the next level. Pair them with powerful open source libraries like <a href="https://quantaquirk.com/docs/billing" class="underline">Cashier</a>, <a href="https://quantaquirk.com/docs/dusk" class="underline">Dusk</a>, <a href="https://quantaquirk.com/docs/broadcasting" class="underline">Echo</a>, <a href="https://quantaquirk.com/docs/horizon" class="underline">Horizon</a>, <a href="https://quantaquirk.com/docs/sanctum" class="underline">Sanctum</a>, <a href="https://quantaquirk.com/docs/telescope" class="underline">Telescope</a>, and more.
+                                    QuantaForge's robust library of first-party tools and libraries, such as <a href="https://forge.quantaforge.com" class="underline">Forge</a>, <a href="https://vapor.quantaforge.com" class="underline">Vapor</a>, <a href="https://nova.quantaforge.com" class="underline">Nova</a>, and <a href="https://envoyer.io" class="underline">Envoyer</a> help you take your projects to the next level. Pair them with powerful open source libraries like <a href="https://quantaforge.com/docs/billing" class="underline">Cashier</a>, <a href="https://quantaforge.com/docs/dusk" class="underline">Dusk</a>, <a href="https://quantaforge.com/docs/broadcasting" class="underline">Echo</a>, <a href="https://quantaforge.com/docs/horizon" class="underline">Horizon</a>, <a href="https://quantaforge.com/docs/sanctum" class="underline">Sanctum</a>, <a href="https://quantaforge.com/docs/telescope" class="underline">Telescope</a>, and more.
                                 </div>
                             </div>
                         </div>
@@ -108,7 +108,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
                             </svg>
 
-                            <a href="https://quantaquirk.bigcartel.com" class="ml-1 underline">
+                            <a href="https://quantaforge.bigcartel.com" class="ml-1 underline">
                                 Shop
                             </a>
 
@@ -123,7 +123,7 @@
                     </div>
 
                     <div class="ml-4 text-center text-sm text-gray-500 sm:text-right sm:ml-0">
-                        QuantaQuirk v{{ QuantaQuirk\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})
+                        QuantaForge v{{ QuantaForge\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})
                     </div>
                 </div>
             </div>

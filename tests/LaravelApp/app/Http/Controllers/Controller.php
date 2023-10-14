@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use QuantaQuirk\Foundation\Auth\Access\AuthorizesRequests;
-use QuantaQuirk\Foundation\Validation\ValidatesRequests;
-use QuantaQuirk\Routing\Controller as BaseController;
+use QuantaForge\Foundation\Auth\Access\AuthorizesRequests;
+use QuantaForge\Foundation\Validation\ValidatesRequests;
+use QuantaForge\Routing\Controller as BaseController;
 
 class Controller extends BaseController
 {

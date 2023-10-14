@@ -2,11 +2,11 @@
 
 namespace Database\Factories;
 
-use QuantaQuirk\Database\Eloquent\Factories\Factory;
-use QuantaQuirk\Support\Str;
+use QuantaForge\Database\Eloquent\Factories\Factory;
+use QuantaForge\Support\Str;
 
 /**
- * @extends \QuantaQuirk\Database\Eloquent\Factories\Factory<\App\Models\User>
+ * @extends \QuantaForge\Database\Eloquent\Factories\Factory<\App\Models\User>
  */
 class UserFactory extends Factory
 {

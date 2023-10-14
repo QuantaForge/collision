@@ -2,8 +2,8 @@
 
 namespace App\Providers;
 
-use QuantaQuirk\Support\Facades\Broadcast;
-use QuantaQuirk\Support\ServiceProvider;
+use QuantaForge\Support\Facades\Broadcast;
+use QuantaForge\Support\ServiceProvider;
 
 class BroadcastServiceProvider extends ServiceProvider
 {

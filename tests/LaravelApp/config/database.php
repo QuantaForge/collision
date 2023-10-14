@@ -1,6 +1,6 @@
 <?php
 
-use QuantaQuirk\Support\Str;
+use QuantaForge\Support\Str;
 
 return [
 
@@ -24,10 +24,10 @@ return [
     |
     | Here are each of the database connections setup for your application.
     | Of course, examples of configuring each database platform that is
-    | supported by QuantaQuirk is shown below to make development simple.
+    | supported by QuantaForge is shown below to make development simple.
     |
     |
-    | All database work in QuantaQuirk is done through the PHP PDO facilities
+    | All database work in QuantaForge is done through the PHP PDO facilities
     | so make sure you have the driver for your particular database of
     | choice installed on your machine before you begin development.
     |
@@ -115,7 +115,7 @@ return [
     |
     | Redis is an open source, fast, and advanced key-value store that also
     | provides a richer body of commands than a typical key-value system
-    | such as APC or Memcached. QuantaQuirk makes it easy to dig right in.
+    | such as APC or Memcached. QuantaForge makes it easy to dig right in.
     |
     */
 
@@ -125,7 +125,7 @@ return [
 
         'options' => [
             'cluster' => env('REDIS_CLUSTER', 'redis'),
-            'prefix' => env('REDIS_PREFIX', Str::slug(env('APP_NAME', 'quantaquirk'), '_').'_database_'),
+            'prefix' => env('REDIS_PREFIX', Str::slug(env('APP_NAME', 'quantaforge'), '_').'_database_'),
         ],
 
         'default' => [

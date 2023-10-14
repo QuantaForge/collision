@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace App\Console\Commands;
 
-use QuantaQuirk\Support\Str;
-use NunoMaduro\Collision\Adapters\QuantaQuirk\Commands\TestCommand as BaseTestCommand;
+use QuantaForge\Support\Str;
+use NunoMaduro\Collision\Adapters\QuantaForge\Commands\TestCommand as BaseTestCommand;
 
 class TestCommand extends BaseTestCommand
 {

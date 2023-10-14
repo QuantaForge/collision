@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace QuantaQuirkApp\tests\Feature;
+namespace QuantaForgeApp\tests\Feature;
 
 use Tests\TestCase;
 

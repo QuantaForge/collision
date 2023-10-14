@@ -1,6 +1,6 @@
 <?php
 
-use QuantaQuirk\Support\Str;
+use QuantaForge\Support\Str;
 
 return [
 
@@ -42,7 +42,7 @@ return [
     |
     | This option allows you to easily specify that all of your session data
     | should be encrypted before it is stored. All encryption will be run
-    | automatically by QuantaQuirk and you can use the Session like normal.
+    | automatically by QuantaForge and you can use the Session like normal.
     |
     */
 
@@ -128,7 +128,7 @@ return [
 
     'cookie' => env(
         'SESSION_COOKIE',
-        Str::slug(env('APP_NAME', 'quantaquirk'), '_').'_session'
+        Str::slug(env('APP_NAME', 'quantaforge'), '_').'_session'
     ),
 
     /*

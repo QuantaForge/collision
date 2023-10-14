@@ -47,7 +47,7 @@ class PhpunitTest extends TestCase
   ✓ deprecation example
   ✓ pass example
 This is an unexpected output
-   PASS  QuantaQuirkApp\\tests\Feature\ExampleWithUnexpectedOutputTest
+   PASS  QuantaForgeApp\\tests\Feature\ExampleWithUnexpectedOutputTest
   ✓ pass example
 
   Tests:    2 deprecated, 2 warnings, 1 risky, 1 incomplete, 2 notices, 1 todo, 1 skipped, 8 passed (15 assertions)
@@ -86,7 +86,7 @@ EOF,
 
         $this->assertConsoleOutputContainsString(<<<'EOF'
 This is an unexpected output
-   PASS  QuantaQuirkApp\tests\Feature\ExampleWithUnexpectedOutputTest
+   PASS  QuantaForgeApp\tests\Feature\ExampleWithUnexpectedOutputTest
   ✓ pass example
 
   Tests:    1 passed (1 assertions)
@@ -154,7 +154,7 @@ EOF,
         $this->assertConsoleOutputContainsString(<<<EOF
   Failed asserting that true is false.
 
-  at tests/QuantaQuirkApp/tests/Unit/ExampleTest.php:16
+  at tests/QuantaForgeApp/tests/Unit/ExampleTest.php:16
      12▕      * @group fail
      13▕      */
      14▕     public function testFailExample()
@@ -165,7 +165,7 @@ EOF,
      19▕     /**
      20▕      * @group todo
 
-  1   tests/QuantaQuirkApp/tests/Unit/ExampleTest.php:16
+  1   tests/QuantaForgeApp/tests/Unit/ExampleTest.php:16
 
 EOF
             , $output);
@@ -176,7 +176,7 @@ EOF
         $process = new Process(array_merge([
             './vendor/pestphp/pest/bin/pest',
             '-c',
-            'tests/QuantaQuirkApp/phpunit.xml',
+            'tests/QuantaForgeApp/phpunit.xml',
             '--colors=never',
         ], $arguments), __DIR__.'/../../..', [
             'COLLISION_PRINTER' => 'DefaultPrinter',
@@ -205,7 +205,7 @@ EOF;
         $process = new Process([
             './vendor/bin/pest',
             '-c',
-            'tests/QuantaQuirkApp/phpunit.xml',
+            'tests/QuantaForgeApp/phpunit.xml',
             'tests/TestCaseWithStdoutOutput',
             '--disallow-test-output',
         ], __DIR__.'/../../..', [

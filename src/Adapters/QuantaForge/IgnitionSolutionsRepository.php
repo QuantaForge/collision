@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace NunoMaduro\Collision\Adapters\QuantaQuirk;
+namespace NunoMaduro\Collision\Adapters\QuantaForge;
 
 use NunoMaduro\Collision\Contracts\SolutionsRepository;
-use QuantaQuirk\Ignition\Contracts\SolutionProviderRepository;
+use QuantaForge\Ignition\Contracts\SolutionProviderRepository;
 use Throwable;
 
 /**
@@ -16,7 +16,7 @@ final class IgnitionSolutionsRepository implements SolutionsRepository
     /**
      * Holds an instance of ignition solutions provider repository.
      *
-     * @var \QuantaQuirk\Ignition\Contracts\SolutionProviderRepository
+     * @var \QuantaForge\Ignition\Contracts\SolutionProviderRepository
      */
     protected $solutionProviderRepository;
 

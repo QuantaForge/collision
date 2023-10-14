@@ -1,7 +1,7 @@
 <?php
 
-use QuantaQuirk\Http\Request;
-use QuantaQuirk\Support\Facades\Route;
+use QuantaForge\Http\Request;
+use QuantaForge\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------

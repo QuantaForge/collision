@@ -1,6 +1,6 @@
 <?php
 
-use QuantaQuirk\Support\Facades\Facade;
+use QuantaForge\Support\Facades\Facade;
 
 return [
 
@@ -15,7 +15,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'QuantaQuirk'),
+    'name' => env('APP_NAME', 'QuantaForge'),
 
     /*
     |--------------------------------------------------------------------------
@@ -115,7 +115,7 @@ return [
     | Encryption Key
     |--------------------------------------------------------------------------
     |
-    | This key is used by the QuantaQuirk encrypter service and should be set
+    | This key is used by the QuantaForge encrypter service and should be set
     | to a random, 32 character string, otherwise these encrypted strings
     | will not be safe. Please do this before deploying an application!
     |
@@ -131,7 +131,7 @@ return [
     |--------------------------------------------------------------------------
     |
     | These configuration options determine the driver used to determine and
-    | manage QuantaQuirk's "maintenance mode" status. The "cache" driver will
+    | manage QuantaForge's "maintenance mode" status. The "cache" driver will
     | allow maintenance mode to be controlled across multiple machines.
     |
     | Supported drivers: "file", "cache"
@@ -157,30 +157,30 @@ return [
     'providers' => [
 
         /*
-         * QuantaQuirk Framework Service Providers...
+         * QuantaForge Framework Service Providers...
          */
-        QuantaQuirk\Auth\AuthServiceProvider::class,
-        QuantaQuirk\Broadcasting\BroadcastServiceProvider::class,
-        QuantaQuirk\Bus\BusServiceProvider::class,
-        QuantaQuirk\Cache\CacheServiceProvider::class,
-        QuantaQuirk\Foundation\Providers\ConsoleSupportServiceProvider::class,
-        QuantaQuirk\Cookie\CookieServiceProvider::class,
-        QuantaQuirk\Database\DatabaseServiceProvider::class,
-        QuantaQuirk\Encryption\EncryptionServiceProvider::class,
-        QuantaQuirk\Filesystem\FilesystemServiceProvider::class,
-        QuantaQuirk\Foundation\Providers\FoundationServiceProvider::class,
-        QuantaQuirk\Hashing\HashServiceProvider::class,
-        QuantaQuirk\Mail\MailServiceProvider::class,
-        QuantaQuirk\Notifications\NotificationServiceProvider::class,
-        QuantaQuirk\Pagination\PaginationServiceProvider::class,
-        QuantaQuirk\Pipeline\PipelineServiceProvider::class,
-        QuantaQuirk\Queue\QueueServiceProvider::class,
-        QuantaQuirk\Redis\RedisServiceProvider::class,
-        QuantaQuirk\Auth\Passwords\PasswordResetServiceProvider::class,
-        QuantaQuirk\Session\SessionServiceProvider::class,
-        QuantaQuirk\Translation\TranslationServiceProvider::class,
-        QuantaQuirk\Validation\ValidationServiceProvider::class,
-        QuantaQuirk\View\ViewServiceProvider::class,
+        QuantaForge\Auth\AuthServiceProvider::class,
+        QuantaForge\Broadcasting\BroadcastServiceProvider::class,
+        QuantaForge\Bus\BusServiceProvider::class,
+        QuantaForge\Cache\CacheServiceProvider::class,
+        QuantaForge\Foundation\Providers\ConsoleSupportServiceProvider::class,
+        QuantaForge\Cookie\CookieServiceProvider::class,
+        QuantaForge\Database\DatabaseServiceProvider::class,
+        QuantaForge\Encryption\EncryptionServiceProvider::class,
+        QuantaForge\Filesystem\FilesystemServiceProvider::class,
+        QuantaForge\Foundation\Providers\FoundationServiceProvider::class,
+        QuantaForge\Hashing\HashServiceProvider::class,
+        QuantaForge\Mail\MailServiceProvider::class,
+        QuantaForge\Notifications\NotificationServiceProvider::class,
+        QuantaForge\Pagination\PaginationServiceProvider::class,
+        QuantaForge\Pipeline\PipelineServiceProvider::class,
+        QuantaForge\Queue\QueueServiceProvider::class,
+        QuantaForge\Redis\RedisServiceProvider::class,
+        QuantaForge\Auth\Passwords\PasswordResetServiceProvider::class,
+        QuantaForge\Session\SessionServiceProvider::class,
+        QuantaForge\Translation\TranslationServiceProvider::class,
+        QuantaForge\Validation\ValidationServiceProvider::class,
+        QuantaForge\View\ViewServiceProvider::class,
 
         /*
          * Package Service Providers...

@@ -2,7 +2,7 @@
 
 namespace App\Http\Middleware;
 
-use QuantaQuirk\Http\Middleware\TrustHosts as Middleware;
+use QuantaForge\Http\Middleware\TrustHosts as Middleware;
 
 class TrustHosts extends Middleware
 {

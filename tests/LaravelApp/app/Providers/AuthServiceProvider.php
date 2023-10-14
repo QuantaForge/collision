@@ -2,8 +2,8 @@
 
 namespace App\Providers;
 
-// use QuantaQuirk\Support\Facades\Gate;
-use QuantaQuirk\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
+// use QuantaForge\Support\Facades\Gate;
+use QuantaForge\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
 
 class AuthServiceProvider extends ServiceProvider
 {

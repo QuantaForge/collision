@@ -2,7 +2,7 @@
 
 namespace App\Exceptions;
 
-use QuantaQuirk\Foundation\Exceptions\Handler as ExceptionHandler;
+use QuantaForge\Foundation\Exceptions\Handler as ExceptionHandler;
 use Throwable;
 
 class Handler extends ExceptionHandler

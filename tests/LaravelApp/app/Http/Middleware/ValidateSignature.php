@@ -2,7 +2,7 @@
 
 namespace App\Http\Middleware;
 
-use QuantaQuirk\Routing\Middleware\ValidateSignature as Middleware;
+use QuantaForge\Routing\Middleware\ValidateSignature as Middleware;
 
 class ValidateSignature extends Middleware
 {

@@ -4,8 +4,8 @@ namespace App\Http\Middleware;
 
 use App\Providers\RouteServiceProvider;
 use Closure;
-use QuantaQuirk\Http\Request;
-use QuantaQuirk\Support\Facades\Auth;
+use QuantaForge\Http\Request;
+use QuantaForge\Support\Facades\Auth;
 use Symfony\Component\HttpFoundation\Response;
 
 class RedirectIfAuthenticated
@@ -13,7 +13,7 @@ class RedirectIfAuthenticated
     /**
      * Handle an incoming request.
      *
-     * @param  \Closure(\QuantaQuirk\Http\Request): (\Symfony\Component\HttpFoundation\Response)  $next
+     * @param  \Closure(\QuantaForge\Http\Request): (\Symfony\Component\HttpFoundation\Response)  $next
      */
     public function handle(Request $request, Closure $next, string ...$guards): Response
     {

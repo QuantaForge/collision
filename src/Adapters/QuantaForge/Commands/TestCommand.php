@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace NunoMaduro\Collision\Adapters\QuantaQuirk\Commands;
+namespace NunoMaduro\Collision\Adapters\QuantaForge\Commands;
 
 use Dotenv\Exception\InvalidPathException;
 use Dotenv\Parser\Parser;
 use Dotenv\Store\StoreBuilder;
-use QuantaQuirk\Console\Command;
-use QuantaQuirk\Support\Env;
-use QuantaQuirk\Support\Str;
-use NunoMaduro\Collision\Adapters\QuantaQuirk\Exceptions\RequirementsException;
+use QuantaForge\Console\Command;
+use QuantaForge\Support\Env;
+use QuantaForge\Support\Str;
+use NunoMaduro\Collision\Adapters\QuantaForge\Exceptions\RequirementsException;
 use NunoMaduro\Collision\Coverage;
 use ParaTest\Options;
 use PHPUnit\Runner\Version;
@@ -77,10 +77,10 @@ class TestCommand extends Command
             throw new RequirementsException('Running Collision 7.x artisan test command requires at least PHPUnit 10.x.');
         }
 
-        $quantaquirkVersion = \QuantaQuirk\Foundation\Application::VERSION;
+        $quantaforgeVersion = \QuantaForge\Foundation\Application::VERSION;
 
-        if ($quantaquirkVersion[0].$quantaquirkVersion[1] !== '10') { // @phpstan-ignore-line
-            throw new RequirementsException('Running Collision 7.x artisan test command requires at least QuantaQuirk 10.x.');
+        if ($quantaforgeVersion[0].$quantaforgeVersion[1] !== '10') { // @phpstan-ignore-line
+            throw new RequirementsException('Running Collision 7.x artisan test command requires at least QuantaForge 10.x.');
         }
 
         if ($this->option('coverage') && ! Coverage::isAvailable()) {
@@ -278,7 +278,7 @@ class TestCommand extends Command
 
         $options = array_merge($this->commonArguments(), [
             '--configuration='.$this->getConfigurationFile(),
-            "--runner=\QuantaQuirk\Testing\ParallelRunner",
+            "--runner=\QuantaForge\Testing\ParallelRunner",
         ], $options);
 
         $inputDefinition = new InputDefinition();
@@ -294,7 +294,7 @@ class TestCommand extends Command
         );
 
         if (! $paraTestOptions->configuration->hasCoverageCacheDirectory()) {
-            $cacheDirectory = sys_get_temp_dir().DIRECTORY_SEPARATOR.'__quantaquirk_test_cache_directory';
+            $cacheDirectory = sys_get_temp_dir().DIRECTORY_SEPARATOR.'__quantaforge_test_cache_directory';
             $options[] = '--cache-directory';
             $options[] = $cacheDirectory;
         }
@@ -340,7 +340,7 @@ class TestCommand extends Command
     }
 
     /**
-     * Clears any set Environment variables set by QuantaQuirk if the --env option is empty.
+     * Clears any set Environment variables set by QuantaForge if the --env option is empty.
      *
      * @return void
      */
@@ -348,8 +348,8 @@ class TestCommand extends Command
     {
         if (! $this->option('env')) {
             $vars = self::getEnvironmentVariables(
-                $this->quantaquirk->environmentPath(),
-                $this->quantaquirk->environmentFile()
+                $this->quantaforge->environmentPath(),
+                $this->quantaforge->environmentFile()
             );
 
             $repository = Env::getRepository();

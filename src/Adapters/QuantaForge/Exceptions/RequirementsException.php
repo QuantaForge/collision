@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace NunoMaduro\Collision\Adapters\QuantaQuirk\Exceptions;
+namespace NunoMaduro\Collision\Adapters\QuantaForge\Exceptions;
 
 use NunoMaduro\Collision\Contracts\RenderlessEditor;
 use NunoMaduro\Collision\Contracts\RenderlessTrace;
@@ -11,6 +11,6 @@ use RuntimeException;
 /**
  * @internal
  */
-final class NotSupportedYetException extends RuntimeException implements RenderlessEditor, RenderlessTrace
+final class RequirementsException extends RuntimeException implements RenderlessEditor, RenderlessTrace
 {
 }

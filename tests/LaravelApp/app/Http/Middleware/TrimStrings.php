@@ -2,7 +2,7 @@
 
 namespace App\Http\Middleware;
 
-use QuantaQuirk\Foundation\Http\Middleware\TrimStrings as Middleware;
+use QuantaForge\Foundation\Http\Middleware\TrimStrings as Middleware;
 
 class TrimStrings extends Middleware
 {

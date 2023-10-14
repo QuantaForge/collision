@@ -1,7 +1,7 @@
 {
-    "name": "quantaquirk/collision",
+    "name": "quantaforge/collision",
     "description": "Cli error handling for console/command-line PHP applications.",
-    "keywords": ["console", "command-line", "php", "cli", "error", "handling", "quantaquirk-zero", "quantaquirk", "artisan", "symfony"],
+    "keywords": ["console", "command-line", "php", "cli", "error", "handling", "quantaforge-zero", "quantaforge", "artisan", "symfony"],
     "license": "proprietary",
     "authors": [
         {
@@ -12,33 +12,33 @@
     "require": {
         "php": "^8.1",
         "filp/whoops": "^2.15.3",
-        "quantaquirk/termwind": "^1.0.0",
+        "quantaforge/termwind": "^1.0.0",
         "symfony/console": "^6.3.4"
     },
     "conflict": {
-        "quantaquirk/framework": ">=11.0.0"
+        "quantaforge/framework": ">=11.0.0"
     },
     "require-dev": {
         "brianium/paratest": "^7.3.0",
-        "quantaquirk/framework": "^1.0.0",
-        "quantaquirk/pint": "^1.0.0",
-        "quantaquirk/sail": "^1.0.0",
-        "quantaquirk/sanctum": "^1.0.0",
-        "quantaquirk/tinker": "^1.0.0",
+        "quantaforge/framework": "^1.0.0",
+        "quantaforge/pint": "^1.0.0",
+        "quantaforge/sail": "^1.0.0",
+        "quantaforge/sanctum": "^1.0.0",
+        "quantaforge/tinker": "^1.0.0",
         "nunomaduro/larastan": "^2.6.4",
         "orchestra/testbench-core": "^8.13.0",
         "pestphp/pest": "^2.23.2",
         "phpunit/phpunit": "^10.4.1",
         "sebastian/environment": "^6.0.1",
-        "quantaquirk/quantaquirk-ignition": "^1.0.0"
+        "quantaforge/quantaforge-ignition": "^1.0.0"
     },
     "autoload-dev": {
         "psr-4": {
             "Tests\\Printer\\": "tests/Printer",
             "Tests\\Unit\\": "tests/Unit",
             "Tests\\FakeProgram\\": "tests/FakeProgram",
-            "Tests\\": "tests/QuantaQuirkApp/tests",
-            "App\\": "tests/QuantaQuirkApp/app/"
+            "Tests\\": "tests/QuantaForgeApp/tests",
+            "App\\": "tests/QuantaForgeApp/app/"
         }
     },
     "minimum-stability": "dev",
@@ -59,9 +59,9 @@
         }
     },
     "extra": {
-        "quantaquirk": {
+        "quantaforge": {
             "providers": [
-                "NunoMaduro\\Collision\\Adapters\\QuantaQuirk\\CollisionServiceProvider"
+                "NunoMaduro\\Collision\\Adapters\\QuantaForge\\CollisionServiceProvider"
             ]
         }
     },

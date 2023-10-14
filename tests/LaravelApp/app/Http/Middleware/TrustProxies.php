@@ -2,8 +2,8 @@
 
 namespace App\Http\Middleware;
 
-use QuantaQuirk\Http\Middleware\TrustProxies as Middleware;
-use QuantaQuirk\Http\Request;
+use QuantaForge\Http\Middleware\TrustProxies as Middleware;
+use QuantaForge\Http\Request;
 
 class TrustProxies extends Middleware
 {

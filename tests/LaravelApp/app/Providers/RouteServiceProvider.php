@@ -2,11 +2,11 @@
 
 namespace App\Providers;
 
-use QuantaQuirk\Cache\RateLimiting\Limit;
-use QuantaQuirk\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
-use QuantaQuirk\Http\Request;
-use QuantaQuirk\Support\Facades\RateLimiter;
-use QuantaQuirk\Support\Facades\Route;
+use QuantaForge\Cache\RateLimiting\Limit;
+use QuantaForge\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
+use QuantaForge\Http\Request;
+use QuantaForge\Support\Facades\RateLimiter;
+use QuantaForge\Support\Facades\Route;
 
 class RouteServiceProvider extends ServiceProvider
 {

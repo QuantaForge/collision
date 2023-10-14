@@ -2,7 +2,7 @@
 
 namespace App\Http;
 
-use QuantaQuirk\Foundation\Http\Kernel as HttpKernel;
+use QuantaForge\Foundation\Http\Kernel as HttpKernel;
 
 class Kernel extends HttpKernel
 {
@@ -16,11 +16,11 @@ class Kernel extends HttpKernel
     protected $middleware = [
         // \App\Http\Middleware\TrustHosts::class,
         \App\Http\Middleware\TrustProxies::class,
-        \QuantaQuirk\Http\Middleware\HandleCors::class,
+        \QuantaForge\Http\Middleware\HandleCors::class,
         \App\Http\Middleware\PreventRequestsDuringMaintenance::class,
-        \QuantaQuirk\Foundation\Http\Middleware\ValidatePostSize::class,
+        \QuantaForge\Foundation\Http\Middleware\ValidatePostSize::class,
         \App\Http\Middleware\TrimStrings::class,
-        \QuantaQuirk\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
+        \QuantaForge\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
     ];
 
     /**
@@ -31,17 +31,17 @@ class Kernel extends HttpKernel
     protected $middlewareGroups = [
         'web' => [
             \App\Http\Middleware\EncryptCookies::class,
-            \QuantaQuirk\Cookie\Middleware\AddQueuedCookiesToResponse::class,
-            \QuantaQuirk\Session\Middleware\StartSession::class,
-            \QuantaQuirk\View\Middleware\ShareErrorsFromSession::class,
+            \QuantaForge\Cookie\Middleware\AddQueuedCookiesToResponse::class,
+            \QuantaForge\Session\Middleware\StartSession::class,
+            \QuantaForge\View\Middleware\ShareErrorsFromSession::class,
             \App\Http\Middleware\VerifyCsrfToken::class,
-            \QuantaQuirk\Routing\Middleware\SubstituteBindings::class,
+            \QuantaForge\Routing\Middleware\SubstituteBindings::class,
         ],
 
         'api' => [
-            // \QuantaQuirk\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful::class,
-            \QuantaQuirk\Routing\Middleware\ThrottleRequests::class.':api',
-            \QuantaQuirk\Routing\Middleware\SubstituteBindings::class,
+            // \QuantaForge\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful::class,
+            \QuantaForge\Routing\Middleware\ThrottleRequests::class.':api',
+            \QuantaForge\Routing\Middleware\SubstituteBindings::class,
         ],
     ];
 
@@ -54,14 +54,14 @@ class Kernel extends HttpKernel
      */
     protected $middlewareAliases = [
         'auth' => \App\Http\Middleware\Authenticate::class,
-        'auth.basic' => \QuantaQuirk\Auth\Middleware\AuthenticateWithBasicAuth::class,
-        'auth.session' => \QuantaQuirk\Session\Middleware\AuthenticateSession::class,
-        'cache.headers' => \QuantaQuirk\Http\Middleware\SetCacheHeaders::class,
-        'can' => \QuantaQuirk\Auth\Middleware\Authorize::class,
+        'auth.basic' => \QuantaForge\Auth\Middleware\AuthenticateWithBasicAuth::class,
+        'auth.session' => \QuantaForge\Session\Middleware\AuthenticateSession::class,
+        'cache.headers' => \QuantaForge\Http\Middleware\SetCacheHeaders::class,
+        'can' => \QuantaForge\Auth\Middleware\Authorize::class,
         'guest' => \App\Http\Middleware\RedirectIfAuthenticated::class,
-        'password.confirm' => \QuantaQuirk\Auth\Middleware\RequirePassword::class,
+        'password.confirm' => \QuantaForge\Auth\Middleware\RequirePassword::class,
         'signed' => \App\Http\Middleware\ValidateSignature::class,
-        'throttle' => \QuantaQuirk\Routing\Middleware\ThrottleRequests::class,
-        'verified' => \QuantaQuirk\Auth\Middleware\EnsureEmailIsVerified::class,
+        'throttle' => \QuantaForge\Routing\Middleware\ThrottleRequests::class,
+        'verified' => \QuantaForge\Auth\Middleware\EnsureEmailIsVerified::class,
     ];
 }

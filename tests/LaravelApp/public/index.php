@@ -1,7 +1,7 @@
 <?php
 
-use QuantaQuirk\Contracts\Http\Kernel;
-use QuantaQuirk\Http\Request;
+use QuantaForge\Contracts\Http\Kernel;
+use QuantaForge\Http\Request;
 
 define('LARAVEL_START', microtime(true));
 

@@ -2,7 +2,7 @@
 
 namespace App\Http\Middleware;
 
-use QuantaQuirk\Cookie\Middleware\EncryptCookies as Middleware;
+use QuantaForge\Cookie\Middleware\EncryptCookies as Middleware;
 
 class EncryptCookies extends Middleware
 {

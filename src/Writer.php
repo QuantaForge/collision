@@ -229,7 +229,7 @@ final class Writer
             : []; // @phpstan-ignore-line
 
         foreach ($solutions as $solution) {
-            /** @var \QuantaQuirk\Ignition\Contracts\Solution $solution */
+            /** @var \QuantaForge\Ignition\Contracts\Solution $solution */
             $title = $solution->getSolutionTitle();
             $description = $solution->getSolutionDescription();
             $links = $solution->getDocumentationLinks();

@@ -1,6 +1,6 @@
 <?php
 
-use QuantaQuirk\Support\Str;
+use QuantaForge\Support\Str;
 
 return [
 
@@ -105,6 +105,6 @@ return [
     |
     */
 
-    'prefix' => env('CACHE_PREFIX', Str::slug(env('APP_NAME', 'quantaquirk'), '_').'_cache_'),
+    'prefix' => env('CACHE_PREFIX', Str::slug(env('APP_NAME', 'quantaforge'), '_').'_cache_'),
 
 ];

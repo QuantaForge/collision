@@ -3,7 +3,7 @@ window._ = _;
 
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests
- * to our QuantaQuirk back-end. This library automatically handles sending the
+ * to our QuantaForge back-end. This library automatically handles sending the
  * CSRF token as a header based on the value of the "XSRF" token cookie.
  */
 
@@ -14,11 +14,11 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /**
  * Echo exposes an expressive API for subscribing to channels and listening
- * for events that are broadcast by QuantaQuirk. Echo and event broadcasting
+ * for events that are broadcast by QuantaForge. Echo and event broadcasting
  * allows your team to easily build robust real-time web applications.
  */
 
-// import Echo from 'quantaquirk-echo';
+// import Echo from 'quantaforge-echo';
 
 // import Pusher from 'pusher-js';
 // window.Pusher = Pusher;

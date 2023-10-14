@@ -11,7 +11,7 @@ declare(strict_types=1);
  *  file that was distributed with this source code.
  */
 
-namespace NunoMaduro\Collision\Adapters\QuantaQuirk;
+namespace NunoMaduro\Collision\Adapters\QuantaForge;
 
 use Whoops\Exception\Inspector as BaseInspector;
 

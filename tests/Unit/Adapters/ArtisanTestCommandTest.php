@@ -12,12 +12,12 @@ class ArtisanTestCommandTest extends TestCase
     /** @test */
     public function testCoverage(): void
     {
-        $output = $this->runTests(['./tests/QuantaQuirkApp/artisan', 'test', '--coverage', '--group', 'coverage']);
+        $output = $this->runTests(['./tests/QuantaForgeApp/artisan', 'test', '--coverage', '--group', 'coverage']);
         $this->assertStringContainsString('Console/Kernel', $output);
         $this->assertStringContainsString('0.0', $output);
         $this->assertStringContainsString('Total: ', $output);
 
-        $output = $this->runTests(['./tests/QuantaQuirkApp/artisan', 'test', '--coverage', '--parallel', '--group', 'coverage']);
+        $output = $this->runTests(['./tests/QuantaForgeApp/artisan', 'test', '--coverage', '--parallel', '--group', 'coverage']);
         $this->assertStringContainsString('Console/Kernel', $output);
         $this->assertStringContainsString('0.0', $output);
         $this->assertStringContainsString('Total: ', $output);
@@ -26,19 +26,19 @@ class ArtisanTestCommandTest extends TestCase
     /** @test */
     public function testMinCoverage(): void
     {
-        $output = $this->runTests(['./tests/QuantaQuirkApp/artisan', 'test', '--coverage', '--min=0', '--group', 'coverage'], 0);
+        $output = $this->runTests(['./tests/QuantaForgeApp/artisan', 'test', '--coverage', '--min=0', '--group', 'coverage'], 0);
         $this->assertStringContainsString('Total: ', $output);
         $this->assertStringNotContainsString('Code coverage below expected', $output);
 
-        $output = $this->runTests(['./tests/QuantaQuirkApp/artisan', 'test', '--coverage', '--min=10', '--parallel', '--group', 'coverage']);
+        $output = $this->runTests(['./tests/QuantaForgeApp/artisan', 'test', '--coverage', '--min=10', '--parallel', '--group', 'coverage']);
         $this->assertStringContainsString('Total: ', $output);
         $this->assertStringNotContainsString('Code coverage below expected', $output);
 
-        $output = $this->runTests(['./tests/QuantaQuirkApp/artisan', 'test', '--coverage', '--min=99', '--group', 'coverage'], 1);
+        $output = $this->runTests(['./tests/QuantaForgeApp/artisan', 'test', '--coverage', '--min=99', '--group', 'coverage'], 1);
         $this->assertStringContainsString('Total: ', $output);
         $this->assertStringContainsString('Code coverage below expected', $output);
 
-        $output = $this->runTests(['./tests/QuantaQuirkApp/artisan', 'test', '--coverage', '--min=99', '--parallel', '--group', 'coverage'], 1);
+        $output = $this->runTests(['./tests/QuantaForgeApp/artisan', 'test', '--coverage', '--min=99', '--parallel', '--group', 'coverage'], 1);
         $this->assertStringContainsString('Total: ', $output);
         $this->assertStringContainsString('Code coverage below expected', $output);
     }
@@ -46,8 +46,8 @@ class ArtisanTestCommandTest extends TestCase
     /** @test */
     public function testAnsi(): void
     {
-        $this->runTests(['./tests/QuantaQuirkApp/artisan', 'test', '--ansi'], 1);
-        $this->runTests(['./tests/QuantaQuirkApp/artisan', 'test', '--no-ansi'], 1);
+        $this->runTests(['./tests/QuantaForgeApp/artisan', 'test', '--ansi'], 1);
+        $this->runTests(['./tests/QuantaForgeApp/artisan', 'test', '--no-ansi'], 1);
     }
 
     /** @test */
@@ -56,22 +56,22 @@ class ArtisanTestCommandTest extends TestCase
         $this->runTests([
             './vendor/bin/pest',
             '-c',
-            'tests/QuantaQuirkApp/phpunit.xml',
+            'tests/QuantaForgeApp/phpunit.xml',
             '--group',
             'environment',
         ]);
 
-        $this->runTests(['./tests/QuantaQuirkApp/artisan', 'test', '--group', 'environment']);
+        $this->runTests(['./tests/QuantaForgeApp/artisan', 'test', '--group', 'environment']);
 
-        $this->runTests(['./tests/QuantaQuirkApp/artisan', 'test', '--parallel', '--group', 'environment']);
-        $this->runTests(['./tests/QuantaQuirkApp/artisan', 'test', '--parallel', '--recreate-databases', '--group', 'environment']);
-        $this->runTests(['./tests/QuantaQuirkApp/artisan', 'test', '--parallel', '--drop-databases', '--group', 'environment']);
+        $this->runTests(['./tests/QuantaForgeApp/artisan', 'test', '--parallel', '--group', 'environment']);
+        $this->runTests(['./tests/QuantaForgeApp/artisan', 'test', '--parallel', '--recreate-databases', '--group', 'environment']);
+        $this->runTests(['./tests/QuantaForgeApp/artisan', 'test', '--parallel', '--drop-databases', '--group', 'environment']);
     }
 
     /** @test */
     public function testEnvTesting(): void
     {
-        file_put_contents(__DIR__.'/../../../tests/QuantaQuirkApp/.env.testing', <<<'EOF'
+        file_put_contents(__DIR__.'/../../../tests/QuantaForgeApp/.env.testing', <<<'EOF'
 VAR_IN_DOT_ENV_TESTING=VAL_IN_DOT_ENV_TESTING
 VAR_OVERRIDDEN_IN_PHPUNIT=VAL_THAT_SHOULD_BE_OVERRIDDEN
 EOF
@@ -80,16 +80,16 @@ EOF
         $this->runTests([
             './vendor/bin/pest',
             '-c',
-            'tests/QuantaQuirkApp/phpunit.xml',
+            'tests/QuantaForgeApp/phpunit.xml',
             '--group',
             'environmentTesting',
         ]);
 
-        $this->runTests(['./tests/QuantaQuirkApp/artisan', 'test', '--group', 'environmentTesting']);
+        $this->runTests(['./tests/QuantaForgeApp/artisan', 'test', '--group', 'environmentTesting']);
 
-        $this->runTests(['./tests/QuantaQuirkApp/artisan', 'test', '--parallel', '--group', 'environmentTesting']);
-        $this->runTests(['./tests/QuantaQuirkApp/artisan', 'test', '--parallel', '--recreate-databases', '--group', 'environmentTesting']);
-        $this->runTests(['./tests/QuantaQuirkApp/artisan', 'test', '--parallel', '--drop-databases', '--group', 'environmentTesting']);
+        $this->runTests(['./tests/QuantaForgeApp/artisan', 'test', '--parallel', '--group', 'environmentTesting']);
+        $this->runTests(['./tests/QuantaForgeApp/artisan', 'test', '--parallel', '--recreate-databases', '--group', 'environmentTesting']);
+        $this->runTests(['./tests/QuantaForgeApp/artisan', 'test', '--parallel', '--drop-databases', '--group', 'environmentTesting']);
     }
 
     /**
@@ -97,7 +97,7 @@ EOF
      */
     public static function cleanUp()
     {
-        @unlink(__DIR__.'/../../../tests/QuantaQuirkApp/.env.testing');
+        @unlink(__DIR__.'/../../../tests/QuantaForgeApp/.env.testing');
     }
 
     /** @test */
@@ -106,31 +106,31 @@ EOF
         $this->runTests([
             './vendor/bin/pest',
             '-c',
-            'tests/QuantaQuirkApp/phpunit.xml',
+            'tests/QuantaForgeApp/phpunit.xml',
             '--group',
             'environmentNoCVPhpunit',
         ]);
 
         // Without Custom Variables (-c|--custom-argument)
-        $this->runTests(['./tests/QuantaQuirkApp/artisan', 'test', '--group', 'environmentNoCVPhpunit']);
+        $this->runTests(['./tests/QuantaForgeApp/artisan', 'test', '--group', 'environmentNoCVPhpunit']);
 
-        $this->runTests(['./tests/QuantaQuirkApp/artisan', 'test', '--parallel', '--group', 'environmentNoCVParallel']);
-        $this->runTests(['./tests/QuantaQuirkApp/artisan', 'test', '--parallel', '--recreate-databases', '--group', 'environmentNoCVParallelRecreate']);
-        $this->runTests(['./tests/QuantaQuirkApp/artisan', 'test', '--parallel', '--drop-databases', '--group', 'environmentNoCVParallelDrop']);
+        $this->runTests(['./tests/QuantaForgeApp/artisan', 'test', '--parallel', '--group', 'environmentNoCVParallel']);
+        $this->runTests(['./tests/QuantaForgeApp/artisan', 'test', '--parallel', '--recreate-databases', '--group', 'environmentNoCVParallelRecreate']);
+        $this->runTests(['./tests/QuantaForgeApp/artisan', 'test', '--parallel', '--drop-databases', '--group', 'environmentNoCVParallelDrop']);
 
         // With Custom Variables (-c)
-        $this->runTests(['./tests/QuantaQuirkApp/artisan', 'test', '-c', '--group', 'environmentCVPhpunit']);
+        $this->runTests(['./tests/QuantaForgeApp/artisan', 'test', '-c', '--group', 'environmentCVPhpunit']);
 
-        $this->runTests(['./tests/QuantaQuirkApp/artisan', 'test', '-c', '--parallel', '--group', 'environmentCVParallel']);
-        $this->runTests(['./tests/QuantaQuirkApp/artisan', 'test', '-c', '--parallel', '--recreate-databases', '--group', 'environmentCVParallelRecreate']);
-        $this->runTests(['./tests/QuantaQuirkApp/artisan', 'test', '-c', '--parallel', '--drop-databases', '--group', 'environmentCVParallelDrop']);
+        $this->runTests(['./tests/QuantaForgeApp/artisan', 'test', '-c', '--parallel', '--group', 'environmentCVParallel']);
+        $this->runTests(['./tests/QuantaForgeApp/artisan', 'test', '-c', '--parallel', '--recreate-databases', '--group', 'environmentCVParallelRecreate']);
+        $this->runTests(['./tests/QuantaForgeApp/artisan', 'test', '-c', '--parallel', '--drop-databases', '--group', 'environmentCVParallelDrop']);
 
         // With Custom Variables (--custom-argument)
-        $this->runTests(['./tests/QuantaQuirkApp/artisan', 'test', '--custom-argument', '--group', 'environmentCVPhpunit']);
+        $this->runTests(['./tests/QuantaForgeApp/artisan', 'test', '--custom-argument', '--group', 'environmentCVPhpunit']);
 
-        $this->runTests(['./tests/QuantaQuirkApp/artisan', 'test', '--custom-argument', '--parallel', '--group', 'environmentCVParallel']);
-        $this->runTests(['./tests/QuantaQuirkApp/artisan', 'test', '--custom-argument', '--parallel', '--recreate-databases', '--group', 'environmentCVParallelRecreate']);
-        $this->runTests(['./tests/QuantaQuirkApp/artisan', 'test', '--custom-argument', '--parallel', '--drop-databases', '--group', 'environmentCVParallelDrop']);
+        $this->runTests(['./tests/QuantaForgeApp/artisan', 'test', '--custom-argument', '--parallel', '--group', 'environmentCVParallel']);
+        $this->runTests(['./tests/QuantaForgeApp/artisan', 'test', '--custom-argument', '--parallel', '--recreate-databases', '--group', 'environmentCVParallelRecreate']);
+        $this->runTests(['./tests/QuantaForgeApp/artisan', 'test', '--custom-argument', '--parallel', '--drop-databases', '--group', 'environmentCVParallelDrop']);
     }
 
     private function runTests(array $arguments, int $expectedExitCode = 0): string
@@ -168,7 +168,7 @@ EOF;
             './vendor/bin/pest',
             '--profile',
             '-c',
-            'tests/QuantaQuirkApp/phpunit.xml',
+            'tests/QuantaForgeApp/phpunit.xml',
             '--filter=ExampleTest',
             '--exclude-group=fail',
         ]);

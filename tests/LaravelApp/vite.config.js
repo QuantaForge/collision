@@ -1,9 +1,9 @@
 import { defineConfig } from 'vite';
-import quantaquirk from 'quantaquirk-vite-plugin';
+import quantaforge from 'quantaforge-vite-plugin';
 
 export default defineConfig({
     plugins: [
-        quantaquirk({
+        quantaforge({
             input: ['resources/css/app.css', 'resources/js/app.js'],
             refresh: true,
         }),

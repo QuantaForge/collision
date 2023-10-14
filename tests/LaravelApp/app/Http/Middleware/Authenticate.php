@@ -2,8 +2,8 @@
 
 namespace App\Http\Middleware;
 
-use QuantaQuirk\Auth\Middleware\Authenticate as Middleware;
-use QuantaQuirk\Http\Request;
+use QuantaForge\Auth\Middleware\Authenticate as Middleware;
+use QuantaForge\Http\Request;
 
 class Authenticate extends Middleware
 {

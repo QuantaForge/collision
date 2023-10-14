@@ -2,8 +2,8 @@
 
 namespace Tests;
 
-use QuantaQuirk\Contracts\Console\Kernel;
-use QuantaQuirk\Foundation\Application;
+use QuantaForge\Contracts\Console\Kernel;
+use QuantaForge\Foundation\Application;
 
 trait CreatesApplication
 {

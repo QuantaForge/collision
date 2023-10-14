@@ -2,11 +2,11 @@
 
 namespace App\Models;
 
-// use QuantaQuirk\Contracts\Auth\MustVerifyEmail;
-use QuantaQuirk\Database\Eloquent\Factories\HasFactory;
-use QuantaQuirk\Foundation\Auth\User as Authenticatable;
-use QuantaQuirk\Notifications\Notifiable;
-use QuantaQuirk\Sanctum\HasApiTokens;
+// use QuantaForge\Contracts\Auth\MustVerifyEmail;
+use QuantaForge\Database\Eloquent\Factories\HasFactory;
+use QuantaForge\Foundation\Auth\User as Authenticatable;
+use QuantaForge\Notifications\Notifiable;
+use QuantaForge\Sanctum\HasApiTokens;
 
 class User extends Authenticatable
 {

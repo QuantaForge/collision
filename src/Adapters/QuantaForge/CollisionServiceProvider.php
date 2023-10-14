@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace NunoMaduro\Collision\Adapters\QuantaQuirk;
+namespace NunoMaduro\Collision\Adapters\QuantaForge;
 
-use QuantaQuirk\Contracts\Debug\ExceptionHandler as ExceptionHandlerContract;
-use QuantaQuirk\Support\ServiceProvider;
-use NunoMaduro\Collision\Adapters\QuantaQuirk\Commands\TestCommand;
+use QuantaForge\Contracts\Debug\ExceptionHandler as ExceptionHandlerContract;
+use QuantaForge\Support\ServiceProvider;
+use NunoMaduro\Collision\Adapters\QuantaForge\Commands\TestCommand;
 use NunoMaduro\Collision\Handler;
 use NunoMaduro\Collision\Provider;
 use NunoMaduro\Collision\SolutionsRepositories\NullSolutionsRepository;
 use NunoMaduro\Collision\Writer;
-use QuantaQuirk\Ignition\Contracts\SolutionProviderRepository;
+use QuantaForge\Ignition\Contracts\SolutionProviderRepository;
 
 /**
  * @internal
@@ -57,7 +57,7 @@ class CollisionServiceProvider extends ServiceProvider
                 return new Provider(null, $handler);
             });
 
-            /** @var \QuantaQuirk\Contracts\Debug\ExceptionHandler $appExceptionHandler */
+            /** @var \QuantaForge\Contracts\Debug\ExceptionHandler $appExceptionHandler */
             $appExceptionHandler = $this->app->make(ExceptionHandlerContract::class);
 
             $this->app->singleton(

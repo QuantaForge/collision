@@ -5,19 +5,19 @@ declare(strict_types=1);
 namespace Tests\Unit\Adapters;
 
 use Exception;
-use QuantaQuirk\Container\Container;
-use QuantaQuirk\Contracts\Debug\ExceptionHandler as ExceptionHandlerContract;
-use QuantaQuirk\Foundation\Application;
-use NunoMaduro\Collision\Adapters\QuantaQuirk\CollisionServiceProvider;
-use NunoMaduro\Collision\Adapters\QuantaQuirk\ExceptionHandler;
-use NunoMaduro\Collision\Adapters\QuantaQuirk\Inspector;
+use QuantaForge\Container\Container;
+use QuantaForge\Contracts\Debug\ExceptionHandler as ExceptionHandlerContract;
+use QuantaForge\Foundation\Application;
+use NunoMaduro\Collision\Adapters\QuantaForge\CollisionServiceProvider;
+use NunoMaduro\Collision\Adapters\QuantaForge\ExceptionHandler;
+use NunoMaduro\Collision\Adapters\QuantaForge\Inspector;
 use NunoMaduro\Collision\Provider;
 use PHPUnit\Framework\TestCase;
 use ReflectionMethod;
 use Symfony\Component\Console\Exception\InvalidArgumentException;
 use Symfony\Component\Console\Output\BufferedOutput;
 
-class QuantaQuirkTest extends TestCase
+class QuantaForgeTest extends TestCase
 {
     /** @test */
     public function itIsRegisteredOnArtisan(): void
@@ -125,7 +125,7 @@ class QuantaQuirkTest extends TestCase
     }
 
     /**
-     * Creates a new instance of QuantaQuirk Application.
+     * Creates a new instance of QuantaForge Application.
      *
      * @return \PHPUnit\Framework\MockObject\MockObject
      */
@@ -138,7 +138,7 @@ class QuantaQuirkTest extends TestCase
         $app->singleton(
             ExceptionHandlerContract::class,
             function () use ($app) {
-                return new \QuantaQuirk\Foundation\Exceptions\Handler($app);
+                return new \QuantaForge\Foundation\Exceptions\Handler($app);
             }
         );
 

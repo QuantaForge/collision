@@ -2,8 +2,8 @@
 
 namespace App\Console;
 
-use QuantaQuirk\Console\Scheduling\Schedule;
-use QuantaQuirk\Foundation\Console\Kernel as ConsoleKernel;
+use QuantaForge\Console\Scheduling\Schedule;
+use QuantaForge\Foundation\Console\Kernel as ConsoleKernel;
 
 class Kernel extends ConsoleKernel
 {

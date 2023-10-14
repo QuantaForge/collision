@@ -2,8 +2,8 @@
 
 namespace Database\Seeders;
 
-// use QuantaQuirk\Database\Console\Seeds\WithoutModelEvents;
-use QuantaQuirk\Database\Seeder;
+// use QuantaForge\Database\Console\Seeds\WithoutModelEvents;
+use QuantaForge\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
 {

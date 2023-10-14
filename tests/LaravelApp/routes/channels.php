@@ -1,6 +1,6 @@
 <?php
 
-use QuantaQuirk\Support\Facades\Broadcast;
+use QuantaForge\Support\Facades\Broadcast;
 
 /*
 |--------------------------------------------------------------------------
